@@ -27,13 +27,13 @@ class SAP(object):
         self.data = {'services':[]}
 
     def run(self):
-        #data = recon.portscan.connect_tcp.main.run(self.args, self.data, auxiliary.reverse_handler.main)
-        #exploits.ftp.vsftpd_123.main.run(self.args, self.data, auxiliary.reverse_handler.main)
-        #exploits.http.php_cgi_arg_injection.main.run(self.args, self.data, auxiliary.reverse_handler.main)
-        #exploits.irc.unrealircd_3281.main.run(self.args, self.data, auxiliary.reverse_handler.main)
-        #exploits.distcc.distcc_cmd_exec.main.run(self.args, self.data, auxiliary.reverse_handler.main)
-        #exploits.samba.usermap_script.main.run(self.args, self.data, auxiliary.reverse_handler.main)
-        #exploits.http.tomcat_mgr_deploy.main.run(self.args, self.data, auxiliary.reverse_handler.main)
+        data = recon.portscan.connect_tcp.main.run(self.args, self.data, auxiliary.reverse_handler.main)
+        exploits.ftp.vsftpd_123.main.run(self.args, self.data, auxiliary.reverse_handler.main)
+        exploits.http.php_cgi_arg_injection.main.run(self.args, self.data, auxiliary.reverse_handler.main)
+        exploits.irc.unrealircd_3281.main.run(self.args, self.data, auxiliary.reverse_handler.main)
+        exploits.distcc.distcc_cmd_exec.main.run(self.args, self.data, auxiliary.reverse_handler.main)
+        exploits.samba.usermap_script.main.run(self.args, self.data, auxiliary.reverse_handler.main)
+        exploits.http.tomcat_mgr_deploy.main.run(self.args, self.data, auxiliary.reverse_handler.main)
         exploits.sql.postgresql.postgres_sharedlib_exec.main.run(self.args, self.data, auxiliary.reverse_handler.main)
 
 if __name__ == '__main__':
